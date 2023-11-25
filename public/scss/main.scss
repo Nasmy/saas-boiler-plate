@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/*!
+ * Cod Spider CSS
+ * Copyright 2021-2022 The CSS Authors
+ */
+
+ /*Variables*/
+ $primary-color: #52b677;
+ $secondary-color: #e31818;
+ $text-color: #000000;
+ $plain-color: #ffffff;
+ $grey-color: #707173;
+ $link-color: #3f7df8;
+
+ $font-sizes: (
+    "H1":24px,
+    "H2":18px,
+    "H3":14px,
+    "H4":12px,
+ );
+ $sp-font: "arial";
+ $font-weight:(
+    "regular": 400,
+    "medium": 700,
+    "bold": 900
+ );
+
+/*main page left side*/
+.left-side{
+    background-color: $plain-color;
+    height: 100vh;
+    width: 100%;
+    // background-color: $primary-color;
+}
+/*main page right side*/
+.right-side{
+    background-color: $plain-color;
+    height: 100vh;
+    width: 100%;
+}
+
+/*Sign Up Title*/
+.sp-sign-up{
+    color: $text-color;
+    font-weight: map-get($font-weight , bold );
+    font-size: map-get($font-sizes , H1 );
+    font-family: $sp-font;
+    text-align: center;
+}
+
+.sp-sign-up p {
+    text-align: center;
+}
+
+.login-img {
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border-color:$primary-color;
+}
+
+.btn-primary:hover {
+    background-color: $primary-color;
+    border-color:$primary-color;
+}
+    /*Sign Up Sub Title*/
+.sp-sub-title{
+    font-size: map-get($font-sizes , H4 );
+    font-weight: map-get($font-weight , medium );
+    color: $grey-color;
+}
+
+/*Login Title*/
+.sp-member-title{
+    font-size: map-get($font-sizes , H3 );
+    font-weight: map-get($font-weight , medium );
+    color: $grey-color;
+}
+
+.sp-login-title{
+    font-size: map-get($font-sizes , H3 );
+    font-weight: map-get($font-weight , medium );
+    color: $link-color;
+}
+
+/*Logo*/
+.cod-spider-logo{
+    width: 45%;
+    height: 45%;
+}
+.google_logo{
+    width: 5%;
+    height: 5%;
+}
